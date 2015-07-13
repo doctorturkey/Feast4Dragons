@@ -98,9 +98,21 @@ var chapterList = [
 
 var spot;
 
-function goBack ()
+document.getElementById('back').addEventListener("click", goBack(), false);
+document.getElementById('forward').addEventListener("click", goForward, false);
 
-$(document).ready(function () {
+function goBack () {
+    //This needs fixin'
+    document.getElementById('chapter').innerHTML = "Don't go back, idiot.";
+}
+
+function goForward () {
+  
+}
+
+/*
+$(document).ready(function () {         Should we use jQuery?
   $('#back').click(goBack());
   $('#forward').click(goForward());
 });
+*/
