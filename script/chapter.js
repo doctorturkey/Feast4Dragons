@@ -97,6 +97,7 @@ var chapterList = [
 ];
 
 var spot = -1;
+var current;
 
 document.getElementById('back').addEventListener("click", goBack);
 document.getElementById('forward').addEventListener("click", goForward);
@@ -107,12 +108,15 @@ function goBack () {
   if (spot === -1) {
      document.getElementById('chapter').innerHTML = "Don't go back, idiot.";
   }
+  
+//   if (document.getElementById('chapter').innerHTML === undefined) {
+//     document.getElementById('chapter').innerHTML = "Don't go back, idiot.";
+//   }
+  
   else {
+//     document.getElementById('list').innerHTML = current;
     spot -= 1;
     document.getElementById('chapter').innerHTML = chapterList[spot];
-    
-    var current = document.getElementById('list').innerHTML;
-    current = current - chapterList[spot];
   }  
 }
 
@@ -120,6 +124,8 @@ function goForward () {
   spot += 1;
   document.getElementById('chapter').innerHTML = chapterList[spot];
   document.getElementById('list').innerHTML += chapterList[spot] + "<br>";
+  
+//   current += document.getElementById('list').value;
 }
 
 // function goForward (spot, chapterList) {
