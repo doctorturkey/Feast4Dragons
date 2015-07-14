@@ -93,7 +93,16 @@ var chapterList = [
   'Feast 45 - Jaime VII',
   'Feast 46 - Samwell V',
   'Dance 46 - The Blind Girl',
-  'Continue reading Dance as normal!'
+  'Continue reading Dance as normal!',
+  "There's no more here",
+  'Stop pressing forward',
+  'Uhh.....',
+  'Okaaayyyy.....',
+  '.....',
+  '..........',
+  'Are you done?',
+  'No?',
+  "Well you're certainly a miserable little creature."
 ];
 
 var spot = -1;
