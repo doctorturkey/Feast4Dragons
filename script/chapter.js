@@ -96,26 +96,35 @@ var chapterList = [
   'Continue reading Dance as normal!'
 ];
 
-var spot = 0;
+var spot = -1;
 
 document.getElementById('back').addEventListener("click", goBack);
-document.getElementById('forward').addEventListener("click", function () {
-  goForward(spot, chapterList);
-  });
+document.getElementById('forward').addEventListener("click", goForward);
+
 
 function goBack () {
     //This needs fixin'
-  if (spot === 0) {
+  if (spot === -1) {
      document.getElementById('chapter').innerHTML = "Don't go back, idiot.";
   }
   else {
-    spot--;
+    spot -= 1;
     document.getElementById('chapter').innerHTML = chapterList[spot];
+    
+    var current = document.getElementById('list').innerHTML;
+    current.pop();
+    document.getElementById('list').innerHTML = ;
   }  
 }
 
-function goForward (spot, chapterList) {
-   spot++;
-   document.getElementById('chapter').innerHTML = chapterList[spot];
+function goForward () {
+  spot += 1;
+  document.getElementById('chapter').innerHTML = chapterList[spot];
+  document.getElementById('list').innerHTML += chapterList[spot] + "<br>";
 }
+
+// function goForward (spot, chapterList) {
+//    spot += 1;
+//    document.getElementById('chapter').innerHTML = chapterList[spot];
+// }
 
