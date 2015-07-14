@@ -119,9 +119,3 @@ function goForward (spot, chapterList) {
    document.getElementById('chapter').innerHTML = chapterList[spot];
 }
 
-/*
-$(document).ready(function () {         Should we use jQuery?
-  $('#back').click(goBack());
-  $('#forward').click(goForward());
-});
-*/
