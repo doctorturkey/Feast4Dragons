@@ -3,15 +3,20 @@
 <head>
 	<title>A Feast for Dragons</title>
 	<link rel="stylesheet" type="text/css" href="./chapter.css" media="all"> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
 	<h1>A Feast for Dragons reading guide!</h1>
 	<p id="chapter">Hi</p>
 	
-	<input id="back" type="button" value="Go back">
-	<input id="forward" type="button" value="Go forward">
+	<button id="back" type="button" class="btn btn-primary">Go Back</button>
+	<button id="forward" type="button" class="btn btn-primary">Go Forward</button>
 	
+	<p id="list"></p>	
+
 	<script defer src="../script/chapter.js"></script>
 </body>
 </html>
