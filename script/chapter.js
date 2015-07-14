@@ -98,7 +98,7 @@ var chapterList = [
 
 var spot = 0;
 
-document.getElementById('back').addEventListener("click", goBack, false);
+document.getElementById('back').addEventListener("click", goBack);
 document.getElementById('forward').addEventListener("click", function () {
   goForward(spot, chapterList);
   });
