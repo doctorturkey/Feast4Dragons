@@ -3,4 +3,9 @@ body {
 	}
 #chapter {
 	font-size:x-large;
+	padding-top: .5cm;
+	padding-bottom: .5cm;
+	}
+#list {
+	padding-top: .5cm;
 	}
