@@ -97,39 +97,38 @@ var chapterList = [
 ];
 
 var spot = -1;
-var current;
+var current = [];
 
 document.getElementById('back').addEventListener("click", goBack);
 document.getElementById('forward').addEventListener("click", goForward);
 
 
 function goBack () {
-    //This needs fixin'
   if (spot === -1) {
      document.getElementById('chapter').innerHTML = "Don't go back, idiot.";
   }
   
-//   if (document.getElementById('chapter').innerHTML === undefined) {
-//     document.getElementById('chapter').innerHTML = "Don't go back, idiot.";
-//   }
+  /*
+  if (document.getElementById('chapter').innerHTML === undefined) {        //This is to get rid of the 'undefined' that appears if you hit forward then back.
+    document.getElementById('chapter').innerHTML = "Don't go back, idiot.";
+  }
+  */
   
-  else {
-//     document.getElementById('list').innerHTML = current;
+  else {    
     spot -= 1;
     document.getElementById('chapter').innerHTML = chapterList[spot];
+    current.pop();
+    document.getElementById('list').innerHTML = current;
   }  
 }
 
 function goForward () {
   spot += 1;
   document.getElementById('chapter').innerHTML = chapterList[spot];
-  document.getElementById('list').innerHTML += chapterList[spot] + "<br>";
-  
-//   current += document.getElementById('list').value;
+  current.push(chapterList[spot] + '<br>');
+  document.getElementById('list').innerHTML = current;
+
 }
 
-// function goForward (spot, chapterList) {
-//    spot += 1;
-//    document.getElementById('chapter').innerHTML = chapterList[spot];
-// }
+
 
