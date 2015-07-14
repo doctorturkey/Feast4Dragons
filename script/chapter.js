@@ -112,8 +112,7 @@ function goBack () {
     document.getElementById('chapter').innerHTML = chapterList[spot];
     
     var current = document.getElementById('list').innerHTML;
-    current.pop();
-    document.getElementById('list').innerHTML = ;
+    current = current - chapterList[spot];
   }  
 }
 
