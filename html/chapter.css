@@ -1,11 +1,56 @@
 body {
 	text-align:center;
 	}
-#chapter {
-	font-size:x-large;
-	padding-top: .5cm;
-	padding-bottom: .5cm;
+	
+#wrapper {
+	max-width: 960px;
+	margin: 0 auto;
 	}
+	
+.title {
+	margin-top: 25px;
+	margin-bottom: 50px;	
+	font-style: italic;
+	}
+	
+# .pics {
+# 	width: 750px;
+# 	}
+	
+	
+#chapter {
+	font-size:20pt;
+	margin: 15px 0px 0px 215px;
+	float: left;
+	
+	
+	}
+	
 #list {
-	padding-top: .5cm;
+	}
+	
+#feast {
+	width: 175px;
+	height: 278px;
+	float: left;
+	}
+
+#dance {
+	width: 175px;
+	height: 278px;
+	float: right;
+	}
+
+#buttons {
+	margin-bottom: 15px;
+	clear: left;
+	}
+	
+.hide {
+	visibility: hidden;
+	}
+
+.show {
+	visibility: visible;
+	display: inline;
 	}
