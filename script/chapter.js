@@ -112,9 +112,22 @@ document.getElementById('back').addEventListener("click", goBack);
 document.getElementById('forward').addEventListener("click", goForward);
 
 
+function showHide (c) {
+  if (c === 'F') {
+    document.getElementById('dance').className = 'hide';
+    document.getElementById('feast').className = 'show';
+     }
+  else if (c === 'D') {
+    document.getElementById('feast').className = 'hide'; 
+    document.getElementById('dance').className = 'show';
+  }
+  else {}
+}
+
+
 function goBack () {
   if (spot === -1) {
-     document.getElementById('chapter').innerHTML = "Don't go back, idiot.";
+     document.getElementById('chapter').innerHTML = "Nope.";
   }
   
   /*
@@ -128,6 +141,8 @@ function goBack () {
     document.getElementById('chapter').innerHTML = chapterList[spot];
     current.pop();
     document.getElementById('list').innerHTML = current;
+    
+    showHide (current[spot][0]);
   }  
 }
 
@@ -136,7 +151,7 @@ function goForward () {
   document.getElementById('chapter').innerHTML = chapterList[spot];
   current.push(chapterList[spot] + '<br>');
   document.getElementById('list').innerHTML = current;
-
+  showHide (current[spot][0]);
 }
 
 
