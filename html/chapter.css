@@ -1,5 +1,7 @@
 body {
 	text-align:center;
+	margin: 0;
+	padding: 0;
 	}
 	
 #wrapper {
@@ -14,16 +16,17 @@ body {
 	}
 	
 # .pics {
-# 	width: 750px;
+# 	width: 960px;
+# 	border-style: solid;
 # 	}
 	
 	
 #chapter {
 	font-size:20pt;
-	margin: 15px 0px 0px 215px;
+	margin: 15px 0px 0px 65px;
 	float: left;
-	
-	
+# 	border-style: solid;
+	width: 475px;
 	}
 	
 #list {
@@ -42,8 +45,13 @@ body {
 	}
 
 #buttons {
+# 	border-style: solid;
+	margin-left: auto;
+	margin-right: auto;
 	margin-bottom: 15px;
 	clear: left;
+	width: 200px;
+# 	float: left;
 	}
 	
 .hide {
@@ -52,5 +60,4 @@ body {
 
 .show {
 	visibility: visible;
-	display: inline;
 	}
