@@ -151,6 +151,7 @@ function goForward () {
   document.getElementById('chapter').innerHTML = chapterList[spot];
   current.push(chapterList[spot] + '<br>');
   document.getElementById('list').innerHTML = current;
+  
   showHide (current[spot][0]);
 }
 
