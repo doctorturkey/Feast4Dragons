@@ -114,12 +114,12 @@ document.getElementById('forward').addEventListener("click", goForward);
 
 function showHide (c) {
   if (c === 'F') {
-    document.getElementById('dance').className = 'hide';
     document.getElementById('feast').className = 'show';
+    document.getElementById('dance').className = 'hide';
      }
   else if (c === 'D') {
-    document.getElementById('feast').className = 'hide'; 
     document.getElementById('dance').className = 'show';
+    document.getElementById('feast').className = 'hide'; 
   }
   else {}
 }
