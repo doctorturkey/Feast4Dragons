@@ -1,6 +1,6 @@
 body {
 	text-align:center;
-	margin: 0;
+	margin: auto;
 	padding: 0;
 	}
 	
@@ -60,4 +60,7 @@ body {
 
 .show {
 	visibility: visible;
+	}
+
+div section {
 	}
