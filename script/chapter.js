@@ -142,7 +142,7 @@ function goBack () {
     current.pop();
     document.getElementById('list').innerHTML = current;
     
-    showHide (current[spot][0]);
+//    showHide (current[spot][0]);
   }  
 }
 
@@ -152,7 +152,7 @@ function goForward () {
   current.push(chapterList[spot] + '<br>');
   document.getElementById('list').innerHTML = current;
   
-  showHide (current[spot][0]);
+//  showHide (current[spot][0]);
 }
 
 
